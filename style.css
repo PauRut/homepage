@@ -1,0 +1,30 @@
+body {
+    background: #fefefe;
+    }
+.mainHeader {
+color:tomato;
+}
+
+.sectionHeader{
+    color:white;
+    background:pink;
+    font-size: 24px;
+}
+
+
+.diaryHeader{
+    color:orange;
+}
+
+.paragraph {
+    color: darkblue;
+}
+
+.calendario {
+    color:green;
+}
+
+.propositos {
+    color:pink;
+    background: grey;
+}
