@@ -11,47 +11,45 @@
 </head>
 
 <body>
-    <header>
-        <a href="index.html">Strona glowna</a>
-        <a href="podstrona.html">Podstrona</a>
+    <header id="top" class="navigation"> 
+        <a class="navigation__link" href="index.html">Strona glowna</a>
+        <a class="navigation__link" href="podstrona.html">Podstrona</a>
     </header>
 
-    <main>
+    <main class="main">
         <header>
             <h1 class="mainHeader"> Página principal - Paulina </h1>
         </header>
 
-        <section>
-            <h2 class="sectionHeader"> Quién soy?
+        <section class="about">
+            <img src="brasil.jpg" alt="Brasil" class="about__picture">
+            <h2 class="about__header"> Quién soy?
             </h2>
-            <p class="paragraph">Hola! Mi nombre es Paulina. Este año voy a aprender a programar, crear paginas web y al final del año voy
+            <p class="about__paragraph">Hola! Mi nombre es Paulina. Este año voy a aprender a programar, crear paginas web y al final del año voy
                 a trabajar en una empresa chula siendo una de las pocas mujeres allí. <b>
-                </b>Hoy (31.01.2020) es el segundo día de #100daysofcode. Mi idea es aprender muchisímo, crear cosas
-                buenas y disfrutar del camino.<br>
+                
         </section>
 
         <section>
-            <h2 class="diaryHeader"> Mi camino
-            </h2>
-            <section>
-                <h3 class="propositos">Cómo obtengo mi propósito?</h3>
+            <h2 class="diaryHeader"> Mi camino </h2> <section>
+                <h3 class="thirdHeader">Cómo obtengo mi propósito?</h3>
             </section>
             <p class="paragraph">Planeando cada mes, cada semana y cada día, encontrando tiempo, por lo menos una hora para aprender, para
                 crear.
                 Este año no viajaré tanto como el año pasado para poder enfocarme en lo que de verdad importa.<br>
-                <a href="podstrona.html"> Busca mas inspiraciones</a>
+                <a class="navigation__link" href="podstrona.html"> Busca mas inspiraciones</a>
             </p>
             <section>
-                <h3 class="calendario">Mi calendario semanal.</h3>
+                <h3 class="thirdHeader">Mi calendario semanal.</h3>
             </section>
             <p class="paragraph">
-                <a href="tydzien/lunes.html>Lunes </a><br>
-                <a href="tydzien/martes.html">Martes</a><br>
-                <a href="tydzien/miercoles.html">Miercoles</a><br>
-                <a href="tydzien/jueves.html">Jueves</a><br>
-                <a href="tydzien/viernes.html">Viernes</a><br>
-                <a href="tydzien/sabado.html">Sabado</a> <br>
-                <a href="tydzien/domingo.html">Domingo</a><br>
+                <a class="link" href="tydzien/lunes.html">Lunes </a> <br>
+                <a class="link" href="tydzien/martes.html">Martes</a><br>
+                <a class="link" href="tydzien/miercoles.html">Miercoles</a><br>
+                <a class="link" href="tydzien/jueves.html">Jueves</a><br>
+                <a class="link" href="tydzien/viernes.html">Viernes</a><br>
+                <a class="link" href="tydzien/sabado.html">Sabado</a> <br>
+                <a class="link" href="tydzien/domingo.html">Domingo</a><br>
 
             </p>
            
@@ -60,7 +58,8 @@
 
     </main>
 
-    <footer>Strona domowa Paulina Rutkowska</footer>
+    <footer> <a href="#top" class="top"> Na gore</a>
+        Strona domowa Paulina Rutkowska</footer>
     <script src="main.js"></script>
 </body>
 
