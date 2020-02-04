@@ -7,18 +7,6 @@ body {
     font-size: 24px;
 }
 
-.diaryHeader {
-    color: #CA907E;
-}
-
-.thirdHeader {
-    color: #994636;
-}
-
-.navigation__link {
-    color: #85BAA1;
-}
-
 .main {
     width: 100%;
     max-width: 700px;
@@ -45,6 +33,10 @@ body {
     background: grey;
 }
 
+.navigation__link {
+    color: #85BAA1;
+}
+
 .about {
     max-width: 400px;
     max-height: 400px;
@@ -68,3 +60,17 @@ body {
     float: left;
     margin: 0 16px 16px 0;
 }
+
+.diary{
+    color: #CA907E;
+}
+
+.diary__calendar {
+    color: #994636;
+}
+
+.diary__header {
+    color: #994636;
+}
+
+
