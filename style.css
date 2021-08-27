@@ -10,14 +10,38 @@ html {
 
 
 body {
-    background: rgb(238, 174, 202);
-    background: radial-gradient(circle, rgb(43, 121, 117) 11%, rgba(155, 186, 231, 1) 84%, rgba(148, 187, 233, 1) 100%);
+    background-image: url(comp.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.about__page {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.about__photo {
+    border-radius: 100%;
+    max-width: 140px;
+    max-height: 140px;
+
+}
+
+.about__paragraph {
+    background-color: rgb(238, 174, 202, 0.5);
+    max-width: 300px;
+    text-align: center;
+    justify-content: center;
+    text-shadow: lightcoral;
 }
 
 .about__paragraph:hover {
     background: rgb(238, 174, 202);
     color: black;
 }
+
+
 
 .action--js {
     color: green;
@@ -30,42 +54,6 @@ body {
 }
 
 .diary__header::before {
-    content: "";
-    display: inline-block;
-    background-color: tomato;
-    height: 16px;
-    width: 16px;
-    border-radius: 50%;
-}
-
-.diary__header::after {
-    content: "";
-    display: inline-block;
-    background-color: tomato;
-    height: 16px;
-    width: 16px;
-    border-radius: 50%;
-
-}
-
-.main {
-    width: 100%;
-    max-width: 700px;
-    margin: 32px auto;
-    padding-top: 40px;
-}
-
-.top {
-    position: fixed;
-    bottom: 10px;
-    right: 10px;
-}
-
-.mainHeader {
-    color: pink;
-}
-
-.site-header {
     position: fixed;
     width: 100%;
     top: 0;
@@ -93,7 +81,7 @@ body {
 }
 
 .navigation__link {
-    color: #85BAA1;
+    color: pink;
 }
 
 .navigation__list {
@@ -106,12 +94,37 @@ body {
 }
 
 .navigation__link:visited {
-    color: #994636;
+    color: black;
 }
 
-.navigation__link:focus {
-    border: 3px solid orange;
+
+
+.todo {
+    background-color: rgb(238, 174, 202, 0.5);
 }
+
+.diary__section {
+    background-color: rgb(238, 174, 202, 0.5);
+}
+
+.main {
+    width: 100%;
+    max-width: 700px;
+    margin: 32px auto;
+    padding-top: 40px;
+}
+
+.top {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+}
+
+.mainHeader {
+    color: pink;
+}
+
+
 
 .about {
     max-width: 400px;
@@ -124,18 +137,6 @@ body {
     color: #85BAA1;
 }
 
-.about__paragraph {
-    color: darkblue;
-    max-width: 400px;
-}
-
-.about__picture {
-    width: 100%;
-    max-width: 200px;
-    display: block;
-    float: left;
-    margin: 0 16px 16px 0;
-}
 
 .diary {
     color: #CA907E;
@@ -161,16 +162,24 @@ body {
     width: 100%;
 }
 
-.header__title--red {
-    color: red;
+.header__title--color {
+    color: #872B4D;
 }
+
+.header__title {
+    font-size: 40px;
+    margin-top: -60px;
+}
+
+
 
 .navigation__list {
     list-style: none;
     padding: 0;
-    height: 60px;
-    display: flex;
-    justify-content: center;
+    background: white;
+    max-width: 200px;
+    text-align: center;
+    border-radius: 50px;
 
 }
 
@@ -203,4 +212,9 @@ body {
     .navigation__item {
         margin: 16px;
     }
+}
+
+.footer {
+    color: #black;
+    margin-top: 80px;
 }
