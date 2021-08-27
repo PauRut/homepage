@@ -11,7 +11,7 @@ html {
 
 body {
     background: rgb(238, 174, 202);
-    background: radial-gradient(circle, rgba(238, 174, 202, 1) 11%, rgba(155, 186, 231, 1) 84%, rgba(148, 187, 233, 1) 100%);
+    background: radial-gradient(circle, rgb(43, 121, 117) 11%, rgba(155, 186, 231, 1) 84%, rgba(148, 187, 233, 1) 100%);
 }
 
 .about__paragraph:hover {
