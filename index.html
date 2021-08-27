@@ -5,22 +5,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Moja stronka</title>
     <link href="style.css" rel="stylesheet" type="text/css">
+    <link href="normalize.css" rel="stylesheet" type="text/css">
 
 </head>
 
-<body>
-    <header id="top" class="navigation">
-        <a class="navigation__link" href="index.html">Strona glowna</a>
-        <a class="navigation__link" href="podstrona.html">Podstrona</a>
+<body class="page">
+    <header id="top" class="main-header">
+        <nav class="navigation">
+            <ul class="navigation__list">
+                <li class="navigation__item"> <a class="navigation__link" href="index.html">Strona glowna</a></li>
+                <li class="navigation__item"> <a class="navigation__link" href="podstrona.html">Podstrona</a></li>
+                <li class="navigation__item"> <a class="navigation__link" href="index.html">Strona glowna</a></li>
+                <li class="navigation__item"> <a class="navigation__link" href="podstrona.html">Podstrona</a></li>
+                <li class="navigation__item"> <a class="navigation__link" href="index.html">Strona glowna</a></li>
+                <li class="navigation__item"> <a class="navigation__link" href="podstrona.html">Podstrona</a></li>
+            </ul>
+        </nav>
+
+
     </header>
 
     <main class="main">
         <header>
-            <h1 class="mainHeader"> Página principal - Paulina </h1>
+            <h1 class="header__title header__title--js header__title--red"> Página principal - Paulina </h1>
         </header>
-
+        <input class="input">
+        <button class="action--js">Zmien naglowek</button>
         <section class="about">
             <h2 class="about__header"> Quién soy? </h2>
             <img src="brasil.jpg" alt="Brasil" class="about__picture">
@@ -33,32 +45,123 @@
 
         <section>
             <h2 class="diary"> Mi camino </h2>
+            <h3 class="diary__header">Cómo obtengo mi propósito?</h3>
+            <p class="diary__paragraph">
             <section>
-                <h3 class="diary__header">Cómo obtengo mi propósito?</h3>
+                <ul class="diary__list">
+                    <li> Planeando cada mes, cada semana y cada día,</li>
+                    <li>encontrando tiempo, por lo menos una hora para aprender, para crear.</li>
+                    <li>Este año no viajaré tanto como el año pasado para poder enfocarme en lo que de verdad importa.
+                    </li>
+                </ul><br>
             </section>
-            <p class="diary__paragraph">Planeando cada mes, cada semana y cada día, encontrando tiempo, por lo menos una hora
-                para aprender, para
-                crear.
-                Este año no viajaré tanto como el año pasado para poder enfocarme en lo que de verdad importa.<br>
-                <a class="diary__link" href="podstrona.html"> Busca mas inspiraciones</a>
-            </p>
             <section>
-                <h3 class="diary__calendar">Mi calendario semanal.</h3>
+                <ul class="list">
+                    <li class="list__item">Hola</li>
+                    <li class="list__item">Czesc</li>
+                    <li class="list__item">Hei
+                        <ol>
+                            <li>Hola</li>
+                            <li>Czesc</li>
+                            <li>Hei</li>
+                        </ol>
+                    </li>
+                </ul>
+                <dl>
+                    <dt> Norwegia </dt>
+                    <dd> Ze stolica w Oslo. polozony.</dd>
+                    <dt>Szwecja</dt>
+                    <dd>Ze stolica w Stokholmie.</dd>
+                </dl>
             </section>
-            <p class="paragraph">
-                <a class="link" href="tydzien/lunes.html">Lunes </a> <br>
-                <a class="link" href="tydzien/martes.html">Martes</a><br>
-                <a class="link" href="tydzien/miercoles.html">Miercoles</a><br>
-                <a class="link" href="tydzien/jueves.html">Jueves</a><br>
-                <a class="link" href="tydzien/viernes.html">Viernes</a><br>
-                <a class="link" href="tydzien/sabado.html">Sabado</a> <br>
-                <a class="link" href="tydzien/domingo.html">Domingo</a><br>
+            <section>
+                <ol>
+                    <li>Hola</li>
+                    <li>Czesc</li>
+                    <li>Hei</li>
+                </ol>
+            </section>
 
+            <section class="diary__steps">
+                <ol>
+                    <li>Cada dia 1h de deporte y 1h de coding</li>
+                    <li>Cocinando sano y revisando la comida</li>
+                    <li>Curso de fotografia</li>
+                </ol><br>
+            </section>
+            <section>
+                <h4>Robimy tabele</h4>
+                <table class="tablica">
+                    <caption>Spis odcinkow</caption>
+                    <thead>
+                        <tr>
+                            <th>lp</th>
+                            <th>tytul</th>
+                            <th> czas trwania</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1.</td>
+                            <td>Powitanie</td>
+                            <td>3h</td>
+                        </tr>
+                        <tr>
+                            <td>2.</td>
+                            <td>Pozegnainie</td>
+                            <td>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi ut et ducimus, ea nulla
+                                totam quisquam magni veritatis reiciendis eveniet labore modi omnis quidem neque, dolor
+                                ad eligendi est provident.</td>
+                        </tr>
+                    </tbody>
+
+                </table>
+
+
+            </section>
+            <section class="data">
+                <table class="table">
+                    <caption> Oceny za culo</caption>
+                    <thead>
+                        <tr>
+                            <th>Imie i nazwisko</th>
+                            <th>Ocena</th>
+                            <th>Narodowosc</th>
+                        </tr>
+                    <tbody>
+                        <tr>
+                            <td>Paulina Rutkowska</td>
+                            <td>10</td>
+                            <td>Polska</td>
+                        </tr>
+                        <tr>
+                            <td>Paulina Bakunowicz</td>
+                            <td>11</td>
+                            <td>Szwecja</td>
+                        </tr>
+                    </tbody>
+                    </thead>
+
+                </table>
+
+            </section>
+            <a class="diary__link" href="podstrona.html"> Busca mas inspiraciones</a>
             </p>
-
-
         </section>
+        <section>
+            <h3 class="diary__calendar">Mi calendario semanal.</h3>
+        </section>
+        <p class="paragraph">
+            <a class="link" href="tydzien/lunes.html">Lunes </a> <br>
+            <a class="link" href="tydzien/martes.html">Martes</a><br>
+            <a class="link" href="tydzien/miercoles.html">Miercoles</a><br>
+            <a class="link" href="tydzien/jueves.html">Jueves</a><br>
+            <a class="link" href="tydzien/viernes.html">Viernes</a><br>
+            <a class="link" href="tydzien/sabado.html">Sabado</a> <br>
+            <a class="link" href="tydzien/domingo.html">Domingo</a><br>
 
+        </p>
+        </section>
     </main>
 
     <footer> <a href="#top" class="top"> Na gore</a>

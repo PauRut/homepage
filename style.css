@@ -1,10 +1,51 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:after,
+*:before {
+    box-sizing: inherit;
+}
+
+
 body {
-    background: #D8D0C1;
+    background: rgb(238, 174, 202);
+    background: radial-gradient(circle, rgba(238, 174, 202, 1) 11%, rgba(155, 186, 231, 1) 84%, rgba(148, 187, 233, 1) 100%);
+}
+
+.about__paragraph:hover {
+    background: rgb(238, 174, 202);
+    color: black;
+}
+
+.action--js {
+    color: green;
+    background-color: black;
 }
 
 .sectionHeader {
     color: white;
     font-size: 24px;
+}
+
+.diary__header::before {
+    content: "";
+    display: inline-block;
+    background-color: tomato;
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+}
+
+.diary__header::after {
+    content: "";
+    display: inline-block;
+    background-color: tomato;
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+
 }
 
 .main {
@@ -19,11 +60,12 @@ body {
     bottom: 10px;
     right: 10px;
 }
+
 .mainHeader {
-    color:pink;
+    color: pink;
 }
 
-.navigation {
+.site-header {
     position: fixed;
     width: 100%;
     top: 0;
@@ -33,8 +75,42 @@ body {
     background: grey;
 }
 
+.list {
+    list-style: decimal;
+}
+
+.tablica {
+    width: 100%;
+}
+
+.navigation__item {
+    display: inline;
+
+}
+
+.input:focus {
+    background: yellow;
+}
+
 .navigation__link {
     color: #85BAA1;
+}
+
+.navigation__list {
+    list-style: none;
+    padding: 0;
+}
+
+.navigation__link:hover {
+    color: #1460aa;
+}
+
+.navigation__link:visited {
+    color: #994636;
+}
+
+.navigation__link:focus {
+    border: 3px solid orange;
 }
 
 .about {
@@ -61,7 +137,7 @@ body {
     margin: 0 16px 16px 0;
 }
 
-.diary{
+.diary {
     color: #CA907E;
 }
 
@@ -69,8 +145,62 @@ body {
     color: #994636;
 }
 
+.diary__list {
+
+    list-style: none;
+}
+
 .diary__header {
     color: #994636;
 }
 
 
+.table {
+    text-align: center;
+    border: 3px solid violet;
+    width: 100%;
+}
+
+.header__title--red {
+    color: red;
+}
+
+.navigation__list {
+    list-style: none;
+    padding: 0;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.navigation__item {
+    display: block;
+    margin: 0 16px;
+
+}
+
+.navigation__link {
+    color: green;
+
+}
+
+@media (min-width: 640px) {
+    .main {
+        max-width: 900px;
+
+    }
+}
+
+@media (max-width: 640px) {
+
+
+    .navigation__list {
+        flex-direction: column;
+        display: none;
+    }
+
+    .navigation__item {
+        margin: 16px;
+    }
+}
